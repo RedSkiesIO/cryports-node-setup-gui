@@ -1,0 +1,8 @@
+build-master:
+  stage: build
+  script:
+    - make dbuild-cryptos-opennode-setup-gui-x8664
+    - make dbuild-cryptos-opennode-setup-gui-armhf
+    - make dbuild-cryptos-opennode-setup-gui-aarch64
+  only:
+    - master
