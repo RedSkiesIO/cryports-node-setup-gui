@@ -1,5 +1,5 @@
-.PHONY: dbuild-cryptos-openode-setup-gui-noarch
-dbuild-cryptos-openode-setup-gui-noarch:
+.PHONY: dbuild-cryptos-opennode-setup-gui-noarch
+dbuild-cryptos-opennode-setup-gui-noarch:
 	docker run \
 		-e CARCH=noarch \
 		-v ${PWD}:/home/builder/cryptos/src \
@@ -8,8 +8,8 @@ dbuild-cryptos-openode-setup-gui-noarch:
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -R -c -f -P"
 
-.PHONY: dbuild-cryptos-openode-setup-gui-x8664
-dbuild-cryptos-openode-setup-gui-x8664:
+.PHONY: dbuild-cryptos-opennode-setup-gui-x8664
+dbuild-cryptos-opennode-setup-gui-x8664:
 	docker run \
 		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}:/home/builder/.abuild \
@@ -17,8 +17,8 @@ dbuild-cryptos-openode-setup-gui-x8664:
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -R -c -f"
 
-.PHONY: dbuild-cryptos-openode-setup-gui-armhf
-dbuild-cryptos-openode-setup-gui-armhf:
+.PHONY: dbuild-cryptos-opennode-setup-gui-armhf
+dbuild-cryptos-opennode-setup-gui-armhf:
 	docker run \
 		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}:/home/builder/.abuild \
@@ -26,8 +26,8 @@ dbuild-cryptos-openode-setup-gui-armhf:
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:armhf \
 		sh -c "cd cryptos/src && abuild checksum && abuild -c"
 
-.PHONY: dbuild-cryptos-openode-setup-gui-aarch64
-dbuild-cryptos-openode-setup-gui-aarch64:
+.PHONY: dbuild-cryptos-opennode-setup-gui-aarch64
+dbuild-cryptos-opennode-setup-gui-aarch64:
 	docker run \
 		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}:/home/builder/.abuild \
