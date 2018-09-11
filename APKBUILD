@@ -19,7 +19,7 @@ prepare() {
 
 build() {
     mkdir -p ~/node-setup-gui
-	mv ~//cryptos/src/src/dist/* ~/node-setup-gui
+	mv ~/cryptos/src/src/dist/* ~/node-setup-gui
 }
 
 package() {
