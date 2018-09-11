@@ -23,5 +23,5 @@ build() {
 }
 
 package() {
-    mkdir -p ~/node-setup-gui
+	mkdir -p "$pkgdir"
 }
