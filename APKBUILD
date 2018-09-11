@@ -18,15 +18,10 @@ prepare() {
 }
 
 build() {
-	cd "$builddir"
-	npm install --only-prod
-}
-
-check() {
-	cd "$builddir"
-    # npm run test:unit
+    mkdir -p /srv/node-setup-gui
+	mv /home/builder/cryptos/src/src/dist/* /srv/node-setup-gui
 }
 
 package() {
-	mv "$builddir"/* /srv/
+    mkdir -p /srv/node-setup-gui
 }
