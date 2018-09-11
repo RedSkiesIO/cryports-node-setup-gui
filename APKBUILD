@@ -18,10 +18,10 @@ prepare() {
 }
 
 build() {
-    mkdir -p /home/builder/node-setup-gui
-	mv /home/builder/cryptos/src/src/dist/* /srv/node-setup-gui
+    mkdir -p ~/node-setup-gui
+	mv ~//cryptos/src/src/dist/* ~/node-setup-gui
 }
 
 package() {
-    mkdir -p /home/builder/node-setup-gui
+    mkdir -p ~/node-setup-gui
 }
