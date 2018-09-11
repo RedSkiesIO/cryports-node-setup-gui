@@ -3,6 +3,8 @@
 
 pkgname=opennode-setup-gui
 pkgdesc="Setup GUI for node"
+pkgver=0.0.1
+pkgrel=0
 arch="x86 x86_64 armhf aarch64"
 license="MIT"
 depends="opennode-base"
