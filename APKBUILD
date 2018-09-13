@@ -18,10 +18,10 @@ prepare() {
 }
 
 build() {
-    mkdir -p ~/node-setup-gui
-	mv ~/cryptos/src/src/dist/* ~/node-setup-gui
+    mkdir -p /setup/gui
+	mv $builddir/* /setup/gui
 }
 
 package() {
-	mkdir -p "$pkgdir"
+    mkdir -p /setup/gui
 }
