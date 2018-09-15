@@ -23,5 +23,5 @@ build() {
 }
 
 package() {
-    sudo mkdir -p /setup/gui
+	mkdir -p "$pkgdir"
 }
