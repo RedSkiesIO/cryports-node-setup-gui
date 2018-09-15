@@ -18,10 +18,10 @@ prepare() {
 }
 
 build() {
-    mkdir -p /setup/gui
-	mv $builddir/* /setup/gui
+    sudo mkdir -p /setup/gui
+	sudo mv $builddir/* /setup/gui
 }
 
 package() {
-    mkdir -p /setup/gui
+    sudo mkdir -p /setup/gui
 }
