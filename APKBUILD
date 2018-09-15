@@ -11,7 +11,7 @@ depends="opennode-base"
 url="https://atlascity.io/"
 
 source="https://cryports.host/archive/stable/node-setup-gui/268/node-setup-gui.tar.gz"
-builddir="$srcdir"/node-setup-gui
+builddir="$srcdir"/dist
 
 prepare() {
     default_prepare
