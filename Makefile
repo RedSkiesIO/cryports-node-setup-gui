@@ -24,7 +24,7 @@ dbuild-cryptos-opennode-setup-gui-armhf:
 		-v ${KEY_DIR}:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}:/home/builder/packages \
 		cryptosregistry.azurecr.io/docker-build:armhf \
-		sh -c "cd cryptos/src && abuild checksum && abuild -c"
+		sh -c "cd cryptos/src && abuild checksum && abuild -R -c"
 
 .PHONY: dbuild-cryptos-opennode-setup-gui-aarch64
 dbuild-cryptos-opennode-setup-gui-aarch64:
@@ -33,4 +33,4 @@ dbuild-cryptos-opennode-setup-gui-aarch64:
 		-v ${KEY_DIR}:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}:/home/builder/packages \
 		cryptosregistry.azurecr.io/docker-build:aarch64 \
-		sh -c "cd cryptos/src && abuild checksum && abuild -c"
+		sh -c "cd cryptos/src && abuild checksum && abuild -R -c"
